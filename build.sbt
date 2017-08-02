@@ -1,5 +1,5 @@
 name := "akka-http-daemon"
-version := "1.1.0"
+version := "1.2.0"
 
 organization := "com.tinylabproductions"
 scalaVersion := "2.12.3"
@@ -79,3 +79,5 @@ libraryDependencies ++= Vector(
 )
 
 bintrayOrganization := Some("tinylabproductions")
+bintrayOmitLicense := true
+bintrayRepository := "akka-http-daemon"
