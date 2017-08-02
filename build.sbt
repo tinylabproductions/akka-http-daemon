@@ -62,10 +62,6 @@ scalacOptions in (Compile, console) ~= (_.filterNot(Set(
 fork in run := true
 
 libraryDependencies ++= Seq(
-  // nameOf macro
-  // https://github.com/dwickern/scala-nameof
-  "com.github.dwickern" %% "scala-nameof" % "1.0.3" % "provided",
-
   // Testing
   "org.specs2" %% "specs2-core" % "3.8.6" % "test",
 
@@ -80,4 +76,4 @@ libraryDependencies ++= Vector(
 
 bintrayOrganization := Some("tinylabproductions")
 bintrayOmitLicense := true
-bintrayRepository := "akka-http-daemon"
+bintrayRepository := "maven"
