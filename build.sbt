@@ -1,5 +1,5 @@
 name := "akka-http-daemon"
-version := "1.2.1"
+version := "1.3.0"
 
 organization := "com.tinylabproductions"
 scalaVersion := "2.12.3"
