@@ -1,5 +1,5 @@
 name := "akka-http-daemon"
-version := "1.2.0"
+version := "1.2.1"
 
 organization := "com.tinylabproductions"
 scalaVersion := "2.12.3"
@@ -63,16 +63,13 @@ fork in run := true
 
 libraryDependencies ++= Seq(
   // Testing
-  "org.specs2" %% "specs2-core" % "3.8.6" % "test",
+  "org.specs2" %% "specs2-core" % "3.9.1" % "test",
 
-  "com.typesafe.akka" %% "akka-http" % "10.0.3",
-  "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0"
+  "com.typesafe.akka" %% "akka-http" % "10.0.9",
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2"
 )
 // Needed for specs2
 scalacOptions in Test ++= Seq("-Yrangepos")
-
-libraryDependencies ++= Vector(
-)
 
 bintrayOrganization := Some("tinylabproductions")
 bintrayOmitLicense := true
