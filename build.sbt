@@ -63,10 +63,10 @@ fork in run := true
 
 libraryDependencies ++= Seq(
   // Testing
-  "org.specs2" %% "specs2-core" % "3.9.1" % "test",
+  "org.specs2" %% "specs2-core" % "3.9.1" % Test,
 
-  "com.typesafe.akka" %% "akka-stream" % "2.5.13" % "provided",
-  "com.typesafe.akka" %% "akka-http" % "10.1.2" % "provided",
+  "com.typesafe.akka" %% "akka-stream" % "2.5.13" % Provided,
+  "com.typesafe.akka" %% "akka-http" % "10.1.2" % Provided,
   "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2"
 )
 // Needed for specs2
