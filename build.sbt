@@ -1,8 +1,8 @@
 name := "akka-http-daemon"
-version := "1.3.0"
+version := "1.4.0"
 
 organization := "com.tinylabproductions"
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.6"
 
 // http://tpolecat.github.io/2017/04/25/scalac-flags.html
 scalacOptions ++= Seq(
@@ -65,7 +65,8 @@ libraryDependencies ++= Seq(
   // Testing
   "org.specs2" %% "specs2-core" % "3.9.1" % "test",
 
-  "com.typesafe.akka" %% "akka-http" % "10.0.9",
+  "com.typesafe.akka" %% "akka-stream" % "2.5.13" % "provided",
+  "com.typesafe.akka" %% "akka-http" % "10.1.2" % "provided",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2"
 )
 // Needed for specs2

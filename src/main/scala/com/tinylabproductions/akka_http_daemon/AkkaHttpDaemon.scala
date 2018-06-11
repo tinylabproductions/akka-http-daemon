@@ -1,6 +1,6 @@
 package com.tinylabproductions.akka_http_daemon
 
-import akka.actor.ActorSystem
+import akka.actor.ExtendedActorSystem
 import akka.http.scaladsl.{Http, HttpExt}
 import akka.http.scaladsl.model.{HttpResponse, StatusCodes}
 import akka.http.scaladsl.server.Directives._
@@ -29,7 +29,7 @@ class AkkaHttpDaemon(
   afterBind: () => Unit,
   afterUnbind: () => Unit
 )(implicit log: Logger) {
-  implicit val system: ActorSystem = http.system
+  implicit val system: ExtendedActorSystem = http.system
   implicit val actorMaterializer: ActorMaterializer = ActorMaterializer()(system)
   import system.dispatcher
 
